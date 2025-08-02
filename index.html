@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Charts Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin: 10px 0;
+    }
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      padding: 10px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 400px;
+    }
+    .qr-code {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .qr-code img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Crypto Dashboard</h1>
+  <div class="chart-container">
+    <iframe src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_1&symbol=BINANCE:BTCUSDT&interval=15&hidetoptoolbar=1&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=RSI@tv-basicstudies,OBV@tv-basicstudies&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hidevolume=0" allowtransparency="true" scrolling="no"></iframe>
+    <iframe src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_2&symbol=BINANCE:SOLUSDT&interval=60&hidetoptoolbar=1&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=RSI@tv-basicstudies,OBV@tv-basicstudies&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hidevolume=0" allowtransparency="true" scrolling="no"></iframe>
+    <iframe src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_3&symbol=BINANCE:ETHUSDT&interval=240&hidetoptoolbar=1&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=RSI@tv-basicstudies,OBV@tv-basicstudies&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hidevolume=0" allowtransparency="true" scrolling="no"></iframe>
+  </div>
+</body>
+</html>
